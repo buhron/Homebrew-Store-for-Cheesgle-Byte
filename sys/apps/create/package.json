@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "title": "Create",
+  "description": "Create",
+  "author": "Cheesgle",
+  "version": 0.1,
+
+  "category": "Productivity",
+  "screenshot": "screenshot.png",
+
+  "entrypoint": "index.html",
+  "icon": "icon.png",
+  
+  "permissions":["openSitesOnComputer"]
+}

@@ -1,0 +1,15 @@
+{
+  "v": 1,
+  "title": "Homebrew Store",
+  "description": "An extra app store for your Cheesgle Byte One",
+  "author": "Buhron",
+  "version": 0.1,
+
+  "category": "Utility",
+  "screenshot": "screenshot.png",
+
+  "entrypoint": "index.html",
+  "icon": "hbstore.png",
+  
+  "permissions":["manageApps"]
+}

@@ -1,0 +1,92 @@
+body{
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+  min-height: calc(100vh - 12px);
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  font-family: sans-serif;
+  background-position: center;
+}
+
+#top{
+  display:flex;
+  align-items:center;
+  text-align: center;
+}
+
+#pfp{
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  box-shadow: rgb(0, 0, 0) 0px 30px 90px;
+  margin-left: 16px;
+}
+
+#wb{
+  margin:0;
+  color: white;
+  padding: 6px;
+  font-size: 6vw;
+}
+
+#apps{
+  display: grid;
+  column-gap: 10%;
+  row-gap: 25px;
+  grid-template-columns: 28% 28% 28%;
+  padding: 30px;
+}
+
+.app{
+  width: 100%;
+}
+
+.app img{
+  position: relative;
+  transition: 0.5s;
+  margin: auto;
+  display: block;
+  text-align: center;
+  max-width: 90%;
+  margin-bottom: 10%;
+  border-radius: 10%;
+  animation-delay: 0.5s;
+  animation: appIn 0.75s;
+}
+
+@keyframes appIn{
+  from {
+    border-radius: 50%;
+    opacity: 0;
+  }
+  to {
+    border-radius: 10%;
+    opacity: 1;
+  }
+}
+
+.app img:hover{
+  transition: 0.5s;
+  max-width: 100%;
+  margin-bottom: 5%;
+  box-shadow: rgb(50, 50, 93) 0px 90px 120px -12px inset, rgb(0, 0, 0) 0px 48px 86px -48px inset;
+}
+
+.app p{
+  color: white;
+  margin: 1px;
+  text-overflow: ellipsis;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  font-size: small;
+}
+
+#loadingApps{
+  text-align: center;
+  color: white;
+  padding: 12px;
+  font-size: 8vw;
+}

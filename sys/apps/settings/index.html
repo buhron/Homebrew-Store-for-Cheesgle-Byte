@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Settings</title>
+
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <div id="home">
+    <h2>Byte's Settings</h2>
+    <hr>
+    <button onclick="to('dsc')">
+      <span class="material-symbols-outlined">description</span>
+      Dev kit disclaimer
+    </button>
+    <button onclick="to('replit')">
+      <span class="material-symbols-outlined">person</span>
+      Replit
+    </button>
+    <button onclick="to('info')">
+      <span class="material-symbols-outlined">info</span>
+      System info
+    </button>
+  </div>
+  
+  <div id="replit" hidden>
+    <h2>Replit</h2>
+    <button onclick="to('home')">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Back
+    </button>
+    <hr>
+    
+    <p>Signing in to Byte with your Replit account allows for extra features on the system and in apps.</p>
+    <p id="replitStatus">Checking...</p>
+    <hr>
+    <button onclick="replit()">
+      <span class="material-symbols-outlined">manage_search</span>
+      Log in/Refresh info
+    </button>
+  </div>
+  
+  <div id="info" hidden>
+    <h2>System information</h2>
+    <button onclick="to('home')">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Back
+    </button>
+    <hr>
+    <img style="width: 100%;" src="/sys/img/cheesgle_byte_one.png">
+    <p>
+      Cheesgle Byte One dev kit v0.1
+      <br>
+      © Lachlan Noble (coding398, codingMASTER398) 2022 (MIT license)
+    </p>
+    <button onclick="reset()">
+      <span class="material-symbols-outlined">device_reset</span>
+      Reset device
+    </button>
+    <p>To fully reset your device, remove Replit from Byte by clearing your cookies for Byte, including REPL_AUTH.</p>
+  </div>
+  <div id="dsc" hidden>
+    <h2>Dev kit disclaimer</h2>
+    <button onclick="to('home')">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Back
+    </button>
+    <p>Huge parts of the phone have been developed, and you probably can find the actual phone if you look. The purpose of this kit is to provide an extremely stripped down version of the system for developing apps before the phone is finalised.<br><br>The actual phone is little like this kit and has many more system features, however it isn't too entertaining now with the lack of apps, so I highly encourage you to use this kit to make whatever you desire to be added to the final phone.</p>
+    <i><br>Nothing about the actual phone is finalised. If you find the actual phone, please don't share much info on it as the system will change a lot before release.</i>
+  </div>
+</body>
+
+</html>
